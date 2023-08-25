@@ -1,119 +1,255 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>음악서비스 반응형 랜딩페이지</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>음악서비스 반응형 랜딩페이지</title>
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/font.css">
-  <link rel="stylesheet" href="assets/css/templete.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/font.css" />
+        <link rel="stylesheet" href="assets/css/templete.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
 
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/jquery-3.7.0.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</head>
-<body>
-  <div class="wrap">
-    <!-- 헤더 -->
-    <header class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-start py-3 py-md-4 px-4 px-md-5 sticky-top">
-      <button class="btn-menu d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="assets/images/logo.svg" alt="로고">
-        </a>
-      </h1>
-      <ul class="nav d-none d-md-flex gap50 ml60">
-        <li>
-          <a class="nav-link link-primary"href="#">스토리</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">이용권</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">커머스</a>
-        </li>
-      </ul>
-      <button class="btn-share d-md-none"></button>
-    </header>
-    <!-- //헤더 -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- 헤더 -->
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-between justify-content-md-start py-3 py-md-4 px-4 px-md-5 sticky-top">
+                <button class="btn-menu d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
 
-    <!-- 모바일 메뉴 -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling">
-      <div class="offcanvas-header py-3 px-4">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        <a href="index.html">
-          <img src="assets/images/logo.svg" alt="로고">
-        </a>
-        <button class="btn-share d-md-none"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="d-flex align-content-center justify-content-center flex-wrap h-100">
-          <ul class="m-menu d-flex flex-column gap20">
-            <li><a href="#" class="active">스토리</a></li>
-            <li><a href="#">이용권</a></li>
-            <li><a href="#">커머스</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- //모바일 메뉴 -->
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="로고" />
+                    </a>
+                </h1>
+                <ul class="nav justify-content-center gap50 ml60 d-none d-md-flex">
+                    <li>
+                        <a href="#main02" class="nav-link link-primary">스토리</a>
+                    </li>
+                    <li>
+                        <a href="#main03" class="nav-link">이용권</a>
+                    </li>
+                    <li>
+                        <a href="#main04" class="nav-link">커머스</a>
+                    </li>
+                </ul>
+                <button class="btn-share d-md-none"></button>
+            </header>
+            <!-- //헤더 -->
 
-    <main>
-      <!-- sec01 -->
-      <section id="main01" class="main01 overflow-hidden container d-flex flex-sm-column flex-wrap justify-content-center align-content-center mt100">
-        <div class="m01-content01">
-          <h2 class="text-white text-center text-lg-start">
-            아티스트의 새로운<br>
-            기존 사운드큐
-          </h2>
-          <p class="mt8 text-desc1 text-gray-400 text-center text-lg-start">
-            팬들과 직접 소통하고<br>
-            아티스트가 되어보세요!
-          </p>
-
-          <div class="mt30">
-            <div class="d-none d-md-flex justify-content-center gap10 justify-content-lg-start">
-              <button class="btn primary app01 effect">Playstore</button>
-              <button class="btn primary app02 effect">App store</button>
+            <!-- 모바일 메뉴 -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling">
+                <div class="offcanvas-header py-3 px-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="로고" />
+                    </a>
+                    <button class="btn-share d-md-none"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex align-content-center justify-content-center flex-wrap h-100">
+                        <ul class="m-menu d-flex flex-column gap20">
+                            <li>
+                                <a href="#main02">스토리</a>
+                            </li>
+                            <li>
+                                <a href="#main03">이용권</a>
+                            </li>
+                            <li>
+                                <a href="#main04">커머스</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex d-md-none justify-content-center gap10">
-              <button class="btn primary effect">앱 다운로드</button>
-            </div>
-          </div>
-        </div>
-        <div class="m01-content02 d-flex justify-content-md-center order-3 order-lg-0 mt20 mt-lg-70 opacity-50">
-          <div class="d-flex flex-lg-wrap justify-content-center gap-lg-3">
-            <div class="logo logo01"></div>
-            <div class="logo logo02"></div>
-            <div class="logo logo03"></div>
-            <div class="logo logo04"></div>
-            <div class="logo logo05"></div>
-          </div>
+            <!-- //모바일메뉴 -->
 
-          <div class="d-md-none d-flex">
-            <div class="logo logo01"></div>
-            <div class="logo logo02"></div>
-            <div class="logo logo03"></div>
-            <div class="logo logo04"></div>
-            <div class="logo logo05"></div>
-          </div>
+            <main>
+                <!-- 섹션01 히어로 -->
+                <section id="main01" class="main01 container d-flex flex-sm-column flex-wrap justify-content-center align-content-center overflow-hidden mt100">
+                    <div class="m01-content01">
+                        <h2 class="text-white text-center text-lg-start">
+                            아티스트의 새로운<br />
+                            기존 사운드큐
+                        </h2>
+                        <p class="mt8 text-desc1 text-gray-400 text-center text-lg-start">
+                            팬들과 직접 소통하고<br />
+                            아티스트가 되어보세요.
+                        </p>
+
+                        <div class="mt30">
+                            <div class="d-none d-md-flex justify-content-center justify-content-md-strat gap10">
+                                <button class="btn primary app01 effect">Playstore</button>
+                                <button class="btn primary app02 effect">App store</button>
+                            </div>
+                            <div class="d-flex d-md-none justify-content-center gap10">
+                                <button class="btn primary effect">앱 다운로드</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m01-content02 order-3 order-lg-0 d-flex mt20 mt-lg-70 opacity-50 justify-content-md-center ju">
+                        <div class="d-flex flex-lg-wrap justify-content-center gap-lg-3">
+                            <div class="logo logo01"></div>
+                            <div class="logo logo02"></div>
+                            <div class="logo logo03"></div>
+                            <div class="logo logo04"></div>
+                            <div class="logo logo05"></div>
+                        </div>
+
+                        <div class="d-md-none d-flex">
+                            <div class="logo logo01"></div>
+                            <div class="logo logo02"></div>
+                            <div class="logo logo03"></div>
+                            <div class="logo logo04"></div>
+                            <div class="logo logo05"></div>
+                        </div>
+                    </div>
+                    <div class="m01-content03">
+                        <div class="hero-bg w-100 h-100">
+                            <img class="w-100 h-100 object-fit-cover" src="assets/images/img_hero.png" alt="메인이미지" />
+                        </div>
+                    </div>
+                </section>
+                <!-- //섹션01 히어로 -->
+
+                <!-- 섹션02 스토리  -->
+                <section id="main02" class="main02 container max780 mt80 mt-lg-100 position-relative">
+                    <div class="text-center">
+                        <strong class="text-gradi">아티스트 스토리</strong>
+                        <h3 class="text-white mt10">음원 발매는 사운드큐에서</h3>
+                        <p class="text-desc2 text-gray-400 mt4">이제는 아티스트가 되어보세요.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 position-relative">
+                            <div class="swiper mySwiper mt24 mt-lg-30 overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="box br16 overflow-hidden">
+                                            <div class="box_up br16 overflow-hidden">
+                                                <img src="assets/images/img_box01.png" alt="" />
+                                            </div>
+
+                                            <div class="box_down ptb10 prl12">
+                                                <div class="box_title text-white text-desc3 d-flex align-items-center gap8 text-nowrap">
+                                                    <button class="btn-play"></button>클레어 님의 뮤직스토리
+                                                </div>
+                                                <hr class="mtb10" />
+                                                <div class="box_desc text-gray-500 text-desc3 ellipsis2">
+                                                    원래 하던 음악 스타일이 대중적인 장르가 아니었기에, 저만의 돌파구가 필요했습니다. 이제는 제가 가수로 활동할 때는 제가 주도적인
+                                                    역할을 많이 한다. 생각한 대로 구현이 될 때. 생각한대로 보이고, 들려질 때 성취감을 느낀다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box br16 overflow-hidden">
+                                            <div class="box_up br16 overflow-hidden">
+                                                <img src="assets/images/img_box02.png" alt="" />
+                                            </div>
+
+                                            <div class="box_down ptb10 prl12">
+                                                <div class="box_title text-white text-desc3 d-flex align-items-center gap8 text-nowrap">
+                                                    <button class="btn-play"></button>클레어 님의 뮤직스토리
+                                                </div>
+                                                <hr class="mtb10" />
+                                                <div class="box_desc text-gray-500 text-desc3 ellipsis2">
+                                                    원래 하던 음악 스타일이 대중적인 장르가 아니었기에, 저만의 돌파구가 필요했습니다. 이제는 제가 가수로 활동할 때는 제가 주도적인
+                                                    역할을 많이 한다. 생각한 대로 구현이 될 때. 생각한대로 보이고, 들려질 때 성취감을 느낀다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box br16 overflow-hidden">
+                                            <div class="box_up br16 overflow-hidden">
+                                                <img src="assets/images/img_box03.png" alt="" />
+                                            </div>
+
+                                            <div class="box_down ptb10 prl12">
+                                                <div class="box_title text-white text-desc3 d-flex align-items-center gap8 text-nowrap">
+                                                    <button class="btn-play"></button>클레어 님의 뮤직스토리
+                                                </div>
+                                                <hr class="mtb10" />
+                                                <div class="box_desc text-gray-500 text-desc3 ellipsis2">
+                                                    원래 하던 음악 스타일이 대중적인 장르가 아니었기에, 저만의 돌파구가 필요했습니다. 이제는 제가 가수로 활동할 때는 제가 주도적인
+                                                    역할을 많이 한다. 생각한 대로 구현이 될 때. 생각한대로 보이고, 들려질 때 성취감을 느낀다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box br16 overflow-hidden">
+                                            <div class="box_up br16 overflow-hidden">
+                                                <img src="assets/images/img_box01.png" alt="" />
+                                            </div>
+
+                                            <div class="box_down ptb10 prl12">
+                                                <div class="box_title text-white text-desc3 d-flex align-items-center gap8 text-nowrap">
+                                                    <button class="btn-play"></button>클레어 님의 뮤직스토리
+                                                </div>
+                                                <hr class="mtb10" />
+                                                <div class="box_desc text-gray-500 text-desc3 ellipsis2">
+                                                    원래 하던 음악 스타일이 대중적인 장르가 아니었기에, 저만의 돌파구가 필요했습니다. 이제는 제가 가수로 활동할 때는 제가 주도적인
+                                                    역할을 많이 한다. 생각한 대로 구현이 될 때. 생각한대로 보이고, 들려질 때 성취감을 느낀다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box br16 overflow-hidden">
+                                            <div class="box_up br16 overflow-hidden">
+                                                <img src="assets/images/img_box02.png" alt="" />
+                                            </div>
+
+                                            <div class="box_down ptb10 prl12">
+                                                <div class="box_title text-white text-desc3 d-flex align-items-center gap8 text-nowrap">
+                                                    <button class="btn-play"></button>클레어 님의 뮤직스토리
+                                                </div>
+                                                <hr class="mtb10" />
+                                                <div class="box_desc text-gray-500 text-desc3 ellipsis2">
+                                                    원래 하던 음악 스타일이 대중적인 장르가 아니었기에, 저만의 돌파구가 필요했습니다. 이제는 제가 가수로 활동할 때는 제가 주도적인
+                                                    역할을 많이 한다. 생각한 대로 구현이 될 때. 생각한대로 보이고, 들려질 때 성취감을 느낀다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box br16 overflow-hidden">
+                                            <div class="box_up br16 overflow-hidden">
+                                                <img src="assets/images/img_box03.png" alt="" />
+                                            </div>
+
+                                            <div class="box_down ptb10 prl12">
+                                                <div class="box_title text-white text-desc3 d-flex align-items-center gap8 text-nowrap">
+                                                    <button class="btn-play"></button>클레어 님의 뮤직스토리
+                                                </div>
+                                                <hr class="mtb10" />
+                                                <div class="box_desc text-gray-500 text-desc3 ellipsis2">
+                                                    원래 하던 음악 스타일이 대중적인 장르가 아니었기에, 저만의 돌파구가 필요했습니다. 이제는 제가 가수로 활동할 때는 제가 주도적인
+                                                    역할을 많이 한다. 생각한 대로 구현이 될 때. 생각한대로 보이고, 들려질 때 성취감을 느낀다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next d-none d-lg-flex"></div>
+                            <div class="swiper-button-prev d-none"></div>
+                            <div class="d-none d-md-block mt40 text-center">
+                                <button class="btn secondary">더보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //섹션02 스토리 -->
+
         </div>
-        <div class="m01-content03">
-          <div class="hero-bg w-100 h-100">
-            <img class="w-100 h-100 object-fit-cover" src="assets/images/img_hero.png" alt="메인이미지">
-          </div>
-        </div>
-      </section>
-      <!-- //sec01 -->
-      <!-- sec02 -->
-      <section id="main02"></section>
-      <!-- //sec02 -->
-    </main>
-  </div>
-</body>
+    </body>
 </html>
