@@ -264,3 +264,27 @@ main {
         width: 100%;
     }
 }
+
+/* 섹션03 이용권 */
+.box.ticket {
+    padding: 2rem;
+}
+.ticket_inner {
+    background: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+.ticket_inner .ticket_list {
+    padding: 2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.ticket_inner .ticket_list li {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background: url(../images/ico_check.svg) no-repeat left center;
+    padding-left: 2.4rem;
+}
